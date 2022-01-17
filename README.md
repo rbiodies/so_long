@@ -1,7 +1,8 @@
-In the main part of this project we must create a 2D game where any hero
-collects any valuables before leaving the place. It is built to make our work with textures, sprites. And some gameplay elements.
+# So_long
+### ***The main part:***
+We must create a 2D game where any hero collects any valuables before leaving the place. It is built to make our work with textures, sprites. And some gameplay elements.
 
-Bonus list:
+### ***Bonus list:***
 
 • enemy patrols that cause the player to lose in case of contact.
 
