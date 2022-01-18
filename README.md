@@ -1,6 +1,6 @@
 # So_long
-### ***The mandatory part:***
-We must create a 2D game where any hero collects any valuables before leaving the place. It is built to make our work with textures, sprites. And some gameplay elements.
+### ***The aim of the mandatory part is:***
+To create a 2D game where any hero collects any valuables before leaving the place. It is built to make our work with textures, sprites. And some gameplay elements.
 
 ### ***Bonus list:***
 
