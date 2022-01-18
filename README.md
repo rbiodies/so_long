@@ -18,15 +18,15 @@ To create a 2D game where any hero collects any valuables before leaving the pla
 1P0000000C00C0000000000000000000C1
 1111111111111111111111111111111111
 ```
->• **0** for an empty space,
+>- **0** for an empty space,
 >
->• **1** for a wall,
+>- **1** for a wall,
 >
->• **C** for a collectible,
+>- **C** for a collectible,
 >
->• **E** for a map exit,
+>- **E** for a map exit,
 >
->• **P** for the player’s starting position.
+>- **P** for the player’s starting position.
 ### ***Run:***
 ```
 %> make bonus
