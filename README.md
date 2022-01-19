@@ -30,6 +30,6 @@ To create a 2D game where any hero collects any valuables before leaving the pla
 ### ***Run:***
 ```
 %> make bonus
-%> ./so_long map4.ber
+%> ./so_long map/map4.ber
 ```
 <img width="912" alt="Screen Shot 2021-11-27 at 6 15 53 PM" src="https://user-images.githubusercontent.com/90090114/143686999-43be0b49-6855-4b58-8cf8-5f31947d5d13.png">
