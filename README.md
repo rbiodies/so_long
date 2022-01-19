@@ -24,14 +24,11 @@ To create a 2D game where any hero collects any valuables before leaving the pla
 1111111111111111111111111
 ```
 >- **0** for an empty space,
->
 >- **1** for a wall,
->
 >- **C** for a collectible,
->
 >- **E** for a map exit,
->
->- **P** for the player’s starting position.
+>- **P** for the player’s starting position,
+>- **A** for an enemy patrol (for the bonus part).
 ### ***Run:***
 ```
 %> make bonus
