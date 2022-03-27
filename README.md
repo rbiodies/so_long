@@ -1,10 +1,8 @@
 # So_long
 ### The aim of the mandatory part:
-To create a 2D game where any hero collects any valuables before leaving the place. It is built to make our work with textures, sprites. And some gameplay elements.
-
+To create a 2D game where any hero collects any valuables before leaving the place. It is built to make our work with textures, sprites and some gameplay elements.
 ### Bonus list:
-
-• enemy patrols that cause the player to lose in case of contact.
+• Enemy patrols that cause the player to lose in case of contact.
 
 • There’s some sprite animation.
 
