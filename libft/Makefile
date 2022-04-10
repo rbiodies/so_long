@@ -32,18 +32,18 @@ CFLAGS	=	-Wall -Wextra -Werror -I${HEADER}
 all:		${NAME}
 
 ${NAME}	:	${OBJ} ${HEADER}
-			ar rcs ${NAME} $?
+			@ar rcs ${NAME} $?
 
-%.o : %.c	${HEADER}
-			${CC} ${CFALGS} -c $< -o $@
+%.o 	: 	%.c	${HEADER}
+			@${CC} ${CFALGS} -c $< -o $@
 
 bonus	:
-	make OBJ="${OBJ_B}" all
+			make OBJ="${OBJ_B}" all
 
 clean	:
-			${RM} ${OBJ} ${OBJ_B}
+			@${RM} ${OBJ} ${OBJ_B}
 
 fclean	:	clean
-	${RM} ${NAME}
+			@${RM} ${NAME}
 
 re		:	fclean all
