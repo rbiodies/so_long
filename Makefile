@@ -50,7 +50,7 @@ clean		:
 				@make -C ${MLX_PATH} clean
 				@make -C ${LIB_PATH} clean
 				@rm -rf ${OBJS} ${OBJS_BONUS}
-				@printf "\033[0;34m💬 Files '${MLX}', '${OBJS}' and '${OBJS_BONUS}' are deleted ! 👻\033[0m\n"
+				@printf "\033[0;34m💬 Files '${MLX}' and '${OBJS_FILES}' are deleted ! 👻\033[0m\n"
 
 fclean		:	clean
 				@make -C ${LIB_PATH} fclean
