@@ -12,7 +12,7 @@ MLX_PATH	=	minilibx_opengl_20191021/
 
 MLX			=	${MLX_PATH}libmlx.a
 
-MLXFLAGS	=	-framework OpenGL -framework AppKit
+MLXFLAGS	=	-L ${MLX_PATH} -lmlx -framework OpenGL -framework AppKit
 
 HEADER		=	-I include/
 OBJS		=	${SRCS:.c=.o}
