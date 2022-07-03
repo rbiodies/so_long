@@ -1,28 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_putnstr_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbiodies <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rbiodies <rbiodies@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/09 15:46:51 by rbiodies          #+#    #+#             */
-/*   Updated: 2021/10/13 11:12:06 by rbiodies         ###   ########.fr       */
+/*   Created: 2021/12/14 17:37:53 by rbiodies          #+#    #+#             */
+/*   Updated: 2022/02/25 15:44:39 by rbiodies         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+void	ft_putnstr_fd(char *str, int n, int fd)
 {
-	unsigned long	i;
+	int	i;
 
 	i = 0;
-	if (dst == '\0' && src == '\0')
-		return ((void *)0);
-	while (i < n)
+	if (n < 0)
 	{
-		((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
-		i++;
+		while (str[i] && i < (int)ft_strlen(str) + n)
+		{
+			ft_putchar_fd(str[i], fd);
+			i++;
+		}
 	}
-	return (dst);
+	else
+	{
+		while (str[i] && i < n)
+		{
+			ft_putchar_fd(str[i], fd);
+			i++;
+		}
+	}		
 }

@@ -1,0 +1,50 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/rbiodies/projects/libft'
+gcc -Wall -Wextra -Werror -I inc/   -c -o arr/ft_arrfree.o arr/ft_arrfree.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o arr/ft_arrlen.o arr/ft_arrlen.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o ascii/ft_isalnum.o ascii/ft_isalnum.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o ascii/ft_isalpha.o ascii/ft_isalpha.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o ascii/ft_isascii.o ascii/ft_isascii.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o ascii/ft_isdigit.o ascii/ft_isdigit.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o ascii/ft_isprint.o ascii/ft_isprint.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o ascii/ft_tolower.o ascii/ft_tolower.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o ascii/ft_toupper.o ascii/ft_toupper.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o math/ft_atoi.o math/ft_atoi.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o math/ft_itoa.o math/ft_itoa.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o mem/ft_bzero.o mem/ft_bzero.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o mem/ft_calloc.o mem/ft_calloc.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o mem/ft_memchr.o mem/ft_memchr.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o mem/ft_memcmp.o mem/ft_memcmp.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o mem/ft_memcpy.o mem/ft_memcpy.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o mem/ft_memmove.o mem/ft_memmove.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o mem/ft_memset.o mem/ft_memset.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o mem/ft_realloc.o mem/ft_realloc.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o put/ft_putarr_fd.o put/ft_putarr_fd.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o put/ft_putchar_fd.o put/ft_putchar_fd.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o put/ft_putendl_fd.o put/ft_putendl_fd.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o put/ft_putnbr_fd.o put/ft_putnbr_fd.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o put/ft_putnstr_fd.o put/ft_putnstr_fd.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o put/ft_putstr_fd.o put/ft_putstr_fd.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o str/ft_split.o str/ft_split.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o str/ft_strchr.o str/ft_strchr.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o str/ft_strcmp.o str/ft_strcmp.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o str/ft_strdup.o str/ft_strdup.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o str/ft_striteri.o str/ft_striteri.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o str/ft_strjoin.o str/ft_strjoin.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o str/ft_strjoin_divider.o str/ft_strjoin_divider.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o str/ft_strjoinch.o str/ft_strjoinch.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o str/ft_strlcat.o str/ft_strlcat.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o str/ft_strlcpy.o str/ft_strlcpy.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o str/ft_strlen.o str/ft_strlen.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o str/ft_strmapi.o str/ft_strmapi.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o str/ft_strncmp.o str/ft_strncmp.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o str/ft_strndup.o str/ft_strndup.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o str/ft_strnstr.o str/ft_strnstr.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o str/ft_strrchr.o str/ft_strrchr.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o str/ft_strreplace.o str/ft_strreplace.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o str/ft_strtrim.o str/ft_strtrim.c
+gcc -Wall -Wextra -Werror -I inc/   -c -o str/ft_substr.o str/ft_substr.c
+ar rcs libft.a arr/ft_arrfree.o arr/ft_arrlen.o ascii/ft_isalnum.o ascii/ft_isalpha.o ascii/ft_isascii.o ascii/ft_isdigit.o ascii/ft_isprint.o ascii/ft_tolower.o ascii/ft_toupper.o math/ft_atoi.o math/ft_itoa.o mem/ft_bzero.o mem/ft_calloc.o mem/ft_memchr.o mem/ft_memcmp.o mem/ft_memcpy.o mem/ft_memmove.o mem/ft_memset.o mem/ft_realloc.o put/ft_putarr_fd.o put/ft_putchar_fd.o put/ft_putendl_fd.o put/ft_putnbr_fd.o put/ft_putnstr_fd.o put/ft_putstr_fd.o str/ft_split.o str/ft_strchr.o str/ft_strcmp.o str/ft_strdup.o str/ft_striteri.o str/ft_strjoin.o str/ft_strjoin_divider.o str/ft_strjoinch.o str/ft_strlcat.o str/ft_strlcpy.o str/ft_strlen.o str/ft_strmapi.o str/ft_strncmp.o str/ft_strndup.o str/ft_strnstr.o str/ft_strrchr.o str/ft_strreplace.o str/ft_strtrim.o str/ft_substr.o
+printf "File 'libft.a' is created !\n"
+make: Leaving directory `/Users/rbiodies/projects/libft'
+ 

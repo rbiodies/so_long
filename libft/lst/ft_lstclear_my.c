@@ -1,34 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_lstclear_my.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rbiodies <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/13 17:07:08 by rbiodies          #+#    #+#             */
-/*   Updated: 2021/10/14 15:14:57 by rbiodies         ###   ########.fr       */
+/*   Created: 2022/01/17 16:20:41 by rbiodies          #+#    #+#             */
+/*   Updated: 2022/01/17 16:20:43 by rbiodies         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-char	*ft_strdup(const char *s1)
+void	ft_lstclear_my(t_list **lst)
 {
-	int		i;
-	char	*buffer;
+	t_list	*tmp;
+	t_list	*element;
 
-	i = 0;
-	while (s1[i] != '\0')
-		i++;
-	buffer = (char *)malloc(i + 1);
-	if (buffer == NULL)
-		return (0);
-	i = 0;
-	while (s1[i] != '\0')
+	element = *lst;
+	tmp = NULL;
+	if (!lst || !*lst)
+		return ;
+	while (element)
 	{
-		buffer[i] = s1[i];
-		i++;
+		if (element->next)
+			tmp = element->next;
+		else
+			tmp = NULL;
+		if (element->content != 0)
+			element->content = 0;
+		free(element);
+		element = tmp;
 	}
-	buffer[i] = '\0';
-	return (buffer);
+	*lst = NULL;
 }

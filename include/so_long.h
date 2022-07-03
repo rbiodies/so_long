@@ -14,7 +14,7 @@
 # define SO_LONG_H
 
 /*****LIBRARIES*****/
-# include "../libft/libft.h"
+# include "../libft/inc/libft.h"
 # include "../minilibx_opengl_20191021/mlx.h"
 
 # include <fcntl.h> // open
