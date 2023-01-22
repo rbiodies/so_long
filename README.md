@@ -1,13 +1,13 @@
 # So_long
-### The aim of the mandatory part:
-To create a 2D game where any hero collects any valuables before leaving the place. It is built to make our work with textures, sprites and some gameplay elements.
-### Bonus list:
+## Mandatory part
+The aim of the mandatory part is to create a 2D game where any hero collects any valuables before leaving the place. It is built to make our work with textures, sprites and some gameplay elements.
+## Bonus list
 • Enemy patrols that cause the player to lose in case of contact.
 
 • There’s some sprite animation.
 
 • Movement count is directly displayed on the screen instead of shell output.
-### Example of a .ber map:
+## Example of a .ber map
 ```
 1111111111111111111111111
 100000000000000010A100C01
@@ -27,9 +27,12 @@ To create a 2D game where any hero collects any valuables before leaving the pla
 >- **E** for a map exit,
 >- **P** for the player’s starting position,
 >- **A** for an enemy patrol (for the bonus part).
-### Run:
+## Compilation
 ```
-%> make bonus
-%> ./so_long maps/map4.ber
+make bonus
+```
+## Usage
+```
+./so_long maps/map4.ber
 ```
 <img width="912" alt="Screen Shot 2021-11-27 at 6 15 53 PM" src="https://user-images.githubusercontent.com/90090114/143686999-43be0b49-6855-4b58-8cf8-5f31947d5d13.png">
